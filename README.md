@@ -1,5 +1,5 @@
 # TicketTracer
-Trace, Manage, and Resolve with Precision.
+<i>Trace, Manage, and Resolve with Precision.</i>
 
 TicketTracer is an IT incident management ecosystem. The project integrates a robust backend architecture with a reactive and dynamic interface, secured under industry standards.
 
