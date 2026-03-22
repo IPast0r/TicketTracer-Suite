@@ -1,7 +1,7 @@
 # TicketTracer
 Trace, Manage, and Resolve with Precision.
 
-TicketTracer is a IT incident management ecosystem. The project integrates a robust backend architecture with a reactive and dynamic interface, secured under industry standards.
+TicketTracer is an IT incident management ecosystem. The project integrates a robust backend architecture with a reactive and dynamic interface, secured under industry standards.
 
 <table style="text-align: left;">
   <tr>
@@ -11,25 +11,34 @@ TicketTracer is a IT incident management ecosystem. The project integrates a rob
   </tr>
   <tr>
     <td style="padding: .5rem;">
-      - Java 17 / Spring Boot 3.5.x
-      - Spring Data JPA (MySQL 8.0)
-      - Spring Security / Keycloak (OAuth2 / OpenID Connect)
-      - Maven
+      - Java 17 / Spring Boot 3.5.x <br>
+      - Spring Data JPA (MySQL 8.0) <br>
+      - Spring Security / Keycloak (OAuth2 / OpenID Connect) <br>
+      - Maven <br>
     </td>
     <td style="padding: .5rem;">
-      - Angular 17+ / TypeScript
-      - Bootstrap 5 (UI / Responsive Design)
-      - RxJS
+      - Angular 17+ / TypeScript <br>
+      - Bootstrap 5 (UI / Responsive Design) <br>
+      - RxJS <br>
     </td>
     <td style="padding: .5rem;">
-      - Docker / Docker Compose
-      - Keycloak (Identity & Access Management)
+      - Docker / Docker Compose <br>
+      - Keycloak (Identity & Access Management) <br>
     </td>
   </tr>
 </table> 
 
-<h3>Structure</h3>
-.
-├── ticket-tracer-api/    # Spring Boot Backend
-├── ticket-tracer-web/    # Angular Frontend
-└── README.md
+<table style="text-align: left;">
+  <tr>
+    <th style="padding: .5rem;">Structure</th>
+  </tr>
+  <tr>
+    <td style="padding: .5rem;">
+        . <br>
+        ├── ticket-tracer-api/    # Spring Boot Backend <br>
+        ├── ticket-tracer-web/    # Angular Frontend <br>
+        └── README.md <br>
+    </td>
+  </tr>
+</table> 
+
