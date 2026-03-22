@@ -17,7 +17,7 @@ TicketTracer is an IT incident management ecosystem. The project integrates a ro
       - Maven <br>
     </td>
     <td style="padding: .5rem;">
-      - Angular 17+ | TypeScript <br>
+      - Angular Material 17+ | TypeScript <br>
     </td>
     <td style="padding: .5rem;">
       - Docker / Docker Compose <br>
