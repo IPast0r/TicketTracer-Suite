@@ -13,13 +13,11 @@ TicketTracer is an IT incident management ecosystem. The project integrates a ro
     <td style="padding: .5rem;">
       - Java 17 / Spring Boot 3.5.x <br>
       - Spring Data JPA (MySQL 8.0) <br>
-      - Spring Security / Keycloak (OAuth2 / OpenID Connect) <br>
+      - Spring Security / Keycloak <br>
       - Maven <br>
     </td>
     <td style="padding: .5rem;">
-      - Angular 17+ / TypeScript <br>
-      - Bootstrap 5 (UI / Responsive Design) <br>
-      - RxJS <br>
+      - Angular 17+ | TypeScript <br>
     </td>
     <td style="padding: .5rem;">
       - Docker / Docker Compose <br>
@@ -28,6 +26,7 @@ TicketTracer is an IT incident management ecosystem. The project integrates a ro
   </tr>
 </table> 
 
+<div style="display: flex;">
 <table style="text-align: left;">
   <tr>
     <th style="padding: .5rem;">Structure</th>
@@ -41,4 +40,6 @@ TicketTracer is an IT incident management ecosystem. The project integrates a ro
     </td>
   </tr>
 </table> 
+</div>
+
 
