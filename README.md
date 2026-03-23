@@ -35,7 +35,7 @@ TicketTracer is an IT incident management ecosystem. The project integrates a ro
     </td>
   </tr>
 </table> 
-
+<br><br>
 **Future Enhancements**
 - **Identity Management:** Integration with **Keycloak** for centralized authentication.
 - **Containerization:** Deployment orchestration using **Docker** and **Docker Compose**.
