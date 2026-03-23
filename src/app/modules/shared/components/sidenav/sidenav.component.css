@@ -1,0 +1,88 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.toolbar{
+    background-color: #dad5d5;
+    color: #918f8f;
+}
+.menuExit{
+    margin: .5rem;
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 1rem;
+}
+ul li{
+    list-style: none;
+}
+div ul{
+    display: flex;
+    align-items: center;
+}
+.rigth{
+    margin-left: auto;
+}
+.profile-card{
+    text-align: center;
+    padding: 2rem;
+}
+.userIcon{
+    height: 5rem;
+    border-radius: 50%;
+}
+.sidenav-container{
+    flex: 1;
+
+}
+.is-mobile .sidenav-container{
+    flex: 1 0 auto;
+    
+}
+.icon{
+    margin-right: 1rem;
+    margin-bottom: .2rem;
+}
+.navItem *{
+    justify-content: center;
+    vertical-align: middle;
+    color: #918f8f;
+}
+.is-mobile .toolbar{
+    position: fixed;
+    z-index: 2;
+}
+
+#mi-popup {
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 60rem;
+}
+#mi-popup::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.supportDiv{
+    display: block;
+    white-space: normal;
+    margin: 1rem;
+}
+.supportDiv h1{
+    font-weight: bold;
+    text-align: center;
+}
+.supportDiv p{
+    font-size: 1rem;
+}
+.divider{
+    margin-bottom: 2rem;
+}

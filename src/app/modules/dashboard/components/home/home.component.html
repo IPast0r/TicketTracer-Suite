@@ -1,0 +1,31 @@
+<mat-card>
+    <h2 class="align">Home</h2>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+        <div class="display-cards">
+            <div class="totalDiv">
+                <h1>Open Tickets</h1>
+                <mat-divider class="divider"></mat-divider>
+                <p id="totalTickets"></p>
+                <mat-divider class="divider"></mat-divider>
+                <a [routerLink]="['/dashboard/ticket']" class="manageBtn">Manage tickets</a>
+            </div>
+
+            <div class="totalDiv">
+                <h1>Active Categories</h1>
+                <mat-divider class="divider"></mat-divider>
+                <p id="totalCategories"></p>
+                <mat-divider class="divider"></mat-divider>
+                <a [routerLink]="['/dashboard/category']" class="manageBtn">Manage categories</a>
+            </div>
+
+            <div class="supportDiv">
+                <h1>Technical support</h1>
+                <mat-divider class="divider"></mat-divider>
+                <p><span style="font-weight: bold;">Phone number:</span> (+34) 000-000-000</p>
+                <p><span style="font-weight: bold;">Schedule:</span> L-V | 8:00 - 18:00</p>
+                <p><span style="font-weight: bold;">E-MAIL:</span> companySupport@company.com</p>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>

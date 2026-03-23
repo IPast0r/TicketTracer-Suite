@@ -1,0 +1,60 @@
+<mat-card>
+    <h2 class="align">Ticket list</h2>
+    <mat-divider></mat-divider>
+    <mat-card-header>
+        <div class="divSearchAdd">
+            <mat-form-field appearance="fill">
+                <mat-label>Search ticket</mat-label>
+                <input matInput #input (keyup)="search(input.value)">
+            </mat-form-field>
+            <button mat-button class="addBtn" (click)="openCategoryDialog()">Add Ticket</button>
+        </div>
+    </mat-card-header>
+
+    <div mat-card-image></div>
+
+    <mat-card-content>
+        <table mat-table [dataSource]="dataSource">
+            <ng-container matColumnDef="id">
+                <th class="highlightedTd"  mat-header-cell *matHeaderCellDef>Nº</th>
+                <th mat-cell *matCellDef="let element">{{ element.id }}</th>
+            </ng-container>
+
+            <ng-container matColumnDef="name">
+                <th class="highlightedTd"  mat-header-cell *matHeaderCellDef>Name</th>
+                <th mat-cell *matCellDef="let element">{{ element.name }}</th>
+            </ng-container>
+
+            <ng-container matColumnDef="description">
+                <th class="highlightedTd"  mat-header-cell *matHeaderCellDef>Description</th>
+                <th mat-cell *matCellDef="let element">{{ element.description }}</th>
+            </ng-container>
+
+            <ng-container matColumnDef="category">
+                <th class="highlightedTd"  mat-header-cell *matHeaderCellDef>Category</th>
+                <th mat-cell *matCellDef="let element">{{ element.category.name }}</th>
+            </ng-container>
+
+            <ng-container matColumnDef="priority">
+                <th class="highlightedTd"  mat-header-cell *matHeaderCellDef>Priority</th>
+                <th mat-cell *matCellDef="let element">{{ element.priority }}</th>
+            </ng-container>
+
+
+            <ng-container matColumnDef="actions">
+                <th class="highlightedTd" mat-header-cell *matHeaderCellDef>Actions</th>
+                <th mat-cell *matCellDef="let element; let i=index;">
+                    <button mat-icon-button color="accent" (click)="delete(element.id)">
+                        <mat-icon aria-label="Delete">delete</mat-icon>
+                    </button>
+                </th>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+        </table>
+        <mat-paginator [pageSizeOptions]="[5,10,20]" showFirstLastButtons></mat-paginator>
+    </mat-card-content>
+
+</mat-card>

@@ -1,0 +1,7 @@
+.ticket-container{
+    display: flex;
+    flex-direction: column;
+}
+.ticket-container > *{
+    width: 100%;
+}

@@ -1,0 +1,38 @@
+<h2 mat-dialog-title>{{formState}} ticket</h2>
+<mat-dialog-content>
+
+    <form [formGroup]="ticketForm">
+        <div class="ticket-container">
+            <mat-form-field>
+                <input matInput placeholder="Name" formControlName="name" required>
+            </mat-form-field>
+            
+            <mat-form-field>
+                <input matInput placeholder="Description" formControlName="description" required>
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput type="number" placeholder="priority" formControlName="priority" required>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Category</mat-label>
+                <mat-select formControlName="category">
+                    <mat-option *ngFor="let cat of categories"list [value]="cat.id">
+                        {{ cat.name }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+        </div>
+    </form>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button mat-button class="addBtn" (click)="onSave()" [disabled]="ticketForm.invalid">
+        <mat-icon>save</mat-icon>Save
+    </button>
+    <button mat-button class="addBtn" (click)="onCancel()">
+        <mat-icon>cancel</mat-icon>Cancel
+    </button>
+</mat-dialog-actions>

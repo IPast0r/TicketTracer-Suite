@@ -1,0 +1,24 @@
+.align {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: large;
+    font-weight: bold;
+}
+.addBtn{
+    background-color: #dad5d5;
+    border: none;
+    height: 50px;
+    padding: 1rem;
+}
+.divSearchAdd{
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.highlightedTd{
+    text-align: center;
+    font-weight: bolder;
+    color: #919093;
+}
